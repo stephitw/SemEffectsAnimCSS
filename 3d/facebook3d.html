@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>facebook3d</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		html,body{
+			background-color: #222;
+		}
+		#contenedor{
+			width: 316px;
+			height: 280px;
+			margin: 12px auto;
+		}
+		.caja{
+			float: left;
+			width: 75px;
+			height: 280px;
+		}
+		#facebookuno{			
+			background-color: #3f758f;
+			border-top: solid 8px white;
+			border-bottom: solid 8px white;
+			border-left: solid 8px white;
+			-webkit-transform: skew(0deg,-12deg);
+			-webkit-animation: vientouno 3s linear infinite;
+			-moz-transform: skew(0deg,-12deg);
+			-moz-animation: vientouno 3s linear infinite;
+		}
+		#facebookdos{
+			background-color: #2d5366;
+			border-top: solid 8px #b5b5b5;
+			border-bottom: solid 8px #b5b5b5;
+			-webkit-transform: skew(0deg,12deg);
+			-webkit-animation: vientodos 3s linear infinite;
+			-moz-transform: skew(0deg,12deg);
+			-moz-animation: vientodos 3s linear infinite;
+
+		}
+		#facebooktres{
+			background-color: #3f758f;
+			border-top: solid 8px white;
+			border-bottom: solid 8px white;
+			-webkit-transform: skew(0deg,-12deg);
+			-webkit-animation: vientouno 3s linear infinite;
+			-moz-transform: skew(0deg,-12deg);
+			-moz-animation: vientouno 3s linear infinite;
+		}
+		#facebookcuatro{
+			background-color: #2d5366;
+			border-top: solid 8px #b5b5b5;
+			border-bottom: solid 8px #b5b5b5;
+			border-right: solid 8px #b5b5b5;
+			-webkit-transform: skew(0deg,12deg);
+			-webkit-animation: vientodos 3s linear infinite;
+			-moz-transform: skew(0deg,12deg);
+			-moz-animation: vientodos 3s linear infinite;
+		}
+		@-webkit-keyframes vientouno{
+			25%{-webkit-transform: skew(0deg,12deg);}
+			50%{-webkit-transform: skew(0deg,-12deg);}
+			75%{-webkit-transform: skew(0deg,12deg);}
+			100%{-webkit-transform: skew(0deg,-12deg);}
+		}
+		@-webkit-keyframes vientodos{
+			25%{-webkit-transform: skew(0deg,-12deg);}
+			50%{-webkit-transform: skew(0deg,12deg);}
+			75%{-webkit-transform: skew(0deg,-12deg);}
+			100%{-webkit-transform: skew(0deg,12deg);}
+		}
+		@-moz-keyframes vientouno{
+			25%{-moz-transform: skew(0deg,12deg);}
+			50%{-moz-transform: skew(0deg,-12deg);}
+			75%{-moz-transform: skew(0deg,12deg);}
+			100%{-moz-transform: skew(0deg,-12deg);}
+		}
+		@-moz-keyframes vientodos{
+			25%{-moz-transform: skew(0deg,-12deg);}
+			50%{-moz-transform: skew(0deg,12deg);}
+			75%{-moz-transform: skew(0deg,-12deg);}
+			100%{-moz-transform: skew(0deg,12deg);}
+		}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+	<div class="caja" id="facebookuno"></div>
+	<div class="caja" id="facebookdos"></div>
+	<div class="caja" id="facebooktres"></div>
+	<div class="caja" id="facebookcuatro"></div>
+</div>
+</body>
+</html>

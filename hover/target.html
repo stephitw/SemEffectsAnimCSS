@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>target</title>
+	<style>
+		body {
+  margin: 0;
+  background: #333;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #ccc;
+}
+body a {
+  text-decoration: none;
+  color: #ccc;
+}
+body h1 {
+  text-align: center;
+}
+
+.side-menu {
+  position: fixed;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  background: #292929;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+}
+.side-menu .side-menu-header {
+  position: relative;
+  height: 10%;
+  background: #262626;
+}
+.side-menu .side-menu-header .close-menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 45px;
+  width: 45px;
+}
+.side-menu .side-menu-header .close-menu .left, .side-menu .side-menu-header .close-menu .right {
+  background: red;
+  height: 4.5px;
+  border-radius: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.side-menu .side-menu-header .close-menu .left {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.side-menu .side-menu-header .close-menu .right {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.side-menu .side-menu-body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.side-menu .side-menu-body a {
+  text-align: center;
+  padding: 15% 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.side-menu .side-menu-body a:hover {
+  background: #ccc;
+  color: #292929;
+}
+
+#side-menu:not(:target) {
+  left: -200px;
+ 
+}
+
+#side-menu:target {
+  left: 0;
+	
+}
+
+.open-menu {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 15px;
+  left: 77px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.open-menu .bar {
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+  margin: 3px 0;
+}
+
+	</style>
+</head>
+<body>
+	<div class="side-menu" id="side-menu">
+		<header class="side-menu-header">
+		  	<a class="close-menu" href="#">
+		      <div class="left"></div>
+		      <div class="right"></div>
+		  </a>
+		</header>
+  		<div class="side-menu-body"><a href="#">Inicio</a><a href="#">Nosotros</a><a href="#">Contacto</a>
+  		</div>
+	</div>
+		<a class="open-menu" href="#side-menu">
+		  <div class="bar"></div>
+		  <div class="bar"></div>
+		  <div class="bar"></div>
+		</a>
+</body>
+</html>

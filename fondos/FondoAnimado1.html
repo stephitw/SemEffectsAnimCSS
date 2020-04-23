@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FondoAnimado1</title>
+	<style>
+		@keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: -1680px 0; }
+		}
+
+		#animate-area	{ 
+			width: 560px; 
+			height: 400px; 
+			background-image: url(http://www.vbforums.com/attachment.php?attachmentid=113103&d=1398112502);
+			background-position: 0px 0px;
+			background-repeat: repeat-x;
+
+			animation: animatedBackground 40s linear infinite;
+		  position: absolute;
+		  z-index: 1;
+		}
+
+		#plane{
+		  width: 128px; 
+			height: 128px; 
+		  background-image: url("http://png-3.findicons.com/files/icons/2207/bags_and_boxes/128/falcon.png");
+		   margin: 20px;
+		    z-index: 2;
+		  position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="animate-area">
+	</div>
+	<div id="plane">
+	</div>
+
+</body>
+</html>

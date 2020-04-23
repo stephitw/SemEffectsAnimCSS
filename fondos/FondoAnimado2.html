@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FondoAnimado2</title>
+	<style>
+		@keyframes animatedBackground {
+		    from { background-position: 0 -200px; }
+		    to { background-position: 100% -200px; }
+		}
+		@-webkit-keyframes animatedBackground {
+		    from { background-position: 0 -200px; }
+		    to { background-position: 100% -200px; }
+		}
+		@-ms-keyframes animatedBackground {
+		    from { background-position: 0 -200px; }
+		    to { background-position: 100% -200px; }
+		}
+		@-moz-keyframes animatedBackground {
+		    from { background-position: 0 -200px; }
+		    to { background-position: 100% -200px; }
+		}
+
+		#site-title { 
+		  margin:auto;
+		  font-size:17em;
+		  font-family:sans-serif;
+		  font-weight:bold;
+		  -webkit-background-clip: text;
+		  -moz-background-clip: text;
+		  background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		  -moz-text-fill-color: transparent;
+		  text-fill-color: transparent;
+		  width: 1200px; 
+		  height: 400px;
+		  /* first part of image must look like the last or you'll notice the jump*/
+		    background-image: url(https://i.imgur.com/yr1lDX7.jpg);
+		    background-position: -1000px 0px;
+		    background-repeat: repeat-x;
+
+		    animation: animatedBackground 40s linear infinite;
+		    -ms-animation: animatedBackground 40s linear infinite;
+		    -moz-animation: animatedBackground 40s linear infinite;
+		    -webkit-animation: animatedBackground 40s linear infinite;
+		}
+	</style>
+</head>
+<body>
+	<div id="site-title">SUMMER</div>
+</body>
+</html>

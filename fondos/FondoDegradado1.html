@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- https://www.w3schools.com/css/css3_gradients.asp -->
+	<title>Fondo Degradado 1</title>
+	<style>
+		body {
+		  background: linear-gradient(132deg, #000000,#00ff00, #0000ff,#e60073,#ff0000,#ffffff);
+		  background-size: 400% 400%;
+		  animation: BackgroundGradient 15s ease infinite;
+		}
+
+		h1 {
+		  position: absolute;
+		  left: 50%;
+		  top: 40%;
+		  transform: translateX(-50%) translateY(-50%);
+		  font-family: Open Sans, sans-serif;
+		  color: #fff;
+		  font-weight: 400;
+		  text-transform: uppercase;
+		  text-align: center;
+		  font-size: 6em;
+		  padding: 5px;
+		  width: 100%;
+		}
+		@keyframes BackgroundGradient {
+		  0% {background-position: 0% 50%;}
+		  50% {background-position: 100% 50%;}
+		  100% {background-position: 0% 50%;}
+		}
+	</style>
+</head>
+<body>
+	<h1>Background Animación CSS</h1>
+</body>
+</html>

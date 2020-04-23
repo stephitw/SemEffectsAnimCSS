@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cube3d</title>
+	<style>
+		@keyframes roll-X{
+  0%{transform:rotateX(0deg);}
+  100%{transform:rotateX(-360deg);}
+}
+@keyframes roll-Y{
+  0%{transform:rotateY(-360deg);}
+  100%{transform:rotateY(360deg);}
+}
+#container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box-X{
+  transform-style: preserve-3d;
+  animation:roll-X 35s linear infinite;
+}
+#box-Y{
+  transform-style: preserve-3d;
+  animation:roll-Y 80s linear infinite;
+}
+#cube{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform:rotateY(45deg) rotateX(-22deg) rotateZ(-22deg);
+}
+[class^="face_"]{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(100,100,200,.8);
+  font-family: impact;
+  font-size: 50px;
+  border:solid 1px;
+}
+.face_1{transform:translateZ(75px);}
+.face_2{transform:rotateY(-90deg) translateZ(75px);}
+.face_3{transform:rotateY(-180deg) translateZ(75px);}
+.face_4{transform:rotateY(90deg) translateZ(75px);}
+.face_5{transform:rotateX(90deg) translateZ(75px);}
+.face_6{transform:rotateX(-90deg) translateZ(75px);}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+  <div id="box-X">
+    <div id="box-Y">
+      <div id="cube">
+        <div class="face_1">1</div>
+        <div class="face_2">2</div>
+        <div class="face_3">3</div>
+        <div class="face_4">4</div>
+        <div class="face_5">5</div>
+        <div class="face_6">6</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

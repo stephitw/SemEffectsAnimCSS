@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hamburguer</title>
+	<style>
+		body{background:lightblue;}
+		.hamburger{
+			    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+		}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+.bread1{
+  background-color:orange;
+  width:100px;
+  height:30px;
+  -webkit-border-radius: 30px 30px 0px 0px ;
+  -moz-border-radius: 30px 30px 0px 0px ;
+  border-radius: 30px 30px 0px 0px ;
+  display:inline-block;
+}
+.seed{
+  display:inline-block; 
+  width:5px;
+  height:3px;
+  background-color:#fdf1cb;
+  margin:-40px 2px 0px 2px;
+  -webkit-border-radius: 10px ;
+  -moz-border-radius:10px ;
+  border-radius:10px ; 
+  -webkit-box-shadow:1px 1px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+}
+.s1 {
+    -webkit-transform:rotate(40deg) ;
+  -moz-transform:rotate(40deg) ;
+  -ms-transform:rotate(40deg);
+  -o-transform:rotate(40deg);
+  transform:rotate(40deg) ; 
+}
+.s2 {
+  top:3px;
+  position:relative;
+  -webkit-transform:rotate(110deg);
+-moz-transform:rotate(110deg) ;
+-ms-transform:rotate(110deg) ;
+-o-transform:rotate(110deg) ;
+transform: rotate(110deg);
+}
+.tomato{
+  background-color:red;
+  height:7px;
+  width:100px;
+  -webkit-border-radius:2px ;
+  -moz-border-radius: 2px ;
+  border-radius: 2px;
+}
+.cheese {
+  background:yellow;
+  height:5px;
+  width:100px;
+  margin-top:2px;
+}
+
+.meat{
+  background:brown;
+  height:10px;
+  width:105px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.salad{
+  width:5px;
+  height:5px;
+  border:4px solid transparent;
+  border-top:4px solid green;
+  border-right:4px solid green;
+  border-radius:50%;
+  display:inline-block;
+ margin:0px -6px 0px 0px;
+}
+.p1{
+  -webkit-transform:rotate(-45deg) ;
+  -moz-transform:rotate(-45deg) ;
+  -ms-transform:rotate(-45deg) ;
+  -o-transform:rotate(-45deg) ;
+  transform:rotate(-45deg) ;
+
+}
+.p2{
+  -webkit-transform:rotate(135deg) ;
+  -moz-transform:rotate(135deg) ;
+  -ms-transform:rotate(135deg) ;
+  -o-transform:rotate(135deg) ;
+  transform:rotate(135deg) ;
+
+}
+
+.bread2{
+  margin-top:0px;
+  background-color:orange;
+  width:100px;
+  height:20px;
+  -webkit-border-radius: 0px 0px 30px 30px ;
+  -moz-border-radius: 0px 0px 30px 30px ;
+  border-radius: 0px 0px 30px 30px ;
+  display:inline-block;
+}
+	</style>
+</head>
+<body>
+	<center>
+  <div class="hamburger">
+    
+<ul class="bread1">
+    <li class="seed s1"></li> 
+    <li class="seed s2"></li> 
+    <li class="seed s1"></li>
+    <li class="seed s2"></li>
+    <li class="seed s1"></li>
+    <li class="seed s2"></li>
+</ul>
+    
+<div class="tomato"></div>
+<div class="cheese"></div>
+<div class="meat"></div>
+    <div class="saladwrapper">
+      <div class="salad p2"></div> 
+      <div class="salad p1"></div>
+      <div class="salad p2"></div>
+      <div class="salad p1"></div>
+      <div class="salad p2"></div>
+      <div class="salad p1"></div>
+      <div class="salad p2"></div>
+      <div class="salad p1"></div>
+      <div class="salad p2"></div>    
+    </div>
+    
+    <div class="bread2"></div>    
+  </div>
+</center>
+</body>
+</html>
